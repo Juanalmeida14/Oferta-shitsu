@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@theme {
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-green: #00be56;
+  --color-brand-red: #ed1d3d;
+}
+
+body {
+  @apply font-sans text-gray-800 bg-white antialiased;
+}
+
+.container-custom {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+.btn-primary {
+  @apply bg-brand-green text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl shadow-lg hover:scale-105 transition-transform text-center inline-block;
+}
+
+.section-padding {
+  @apply py-12 md:py-20;
+}
